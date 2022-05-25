@@ -1,10 +1,10 @@
-package com.example.military;
+package com.example.dish;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MilitaryApplicationTests {
+class DishApplicationTests {
 
     @Test
     void contextLoads() {
