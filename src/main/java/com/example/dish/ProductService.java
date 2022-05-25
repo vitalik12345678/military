@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ProductService {
 
-    ResponseEntity<?> calculateProductCall(List<String> products);
+    ResponseEntity<?> calculateProductCall(DIshRequest products);
 
 }

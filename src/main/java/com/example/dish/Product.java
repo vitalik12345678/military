@@ -18,5 +18,6 @@ public class Product {
     @Column
     private String name;
 
-
+    @Column
+    private  Integer call;
 }
