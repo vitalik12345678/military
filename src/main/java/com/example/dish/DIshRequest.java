@@ -9,5 +9,5 @@ import java.util.List;
 public class DIshRequest {
 
     private List<String> products;
-    private List<String> count;
+
 }

@@ -20,4 +20,7 @@ public class Product {
 
     @Column
     private  Integer call;
+
+    @Column
+    private String type;
 }

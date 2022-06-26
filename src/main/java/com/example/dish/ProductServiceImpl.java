@@ -22,14 +22,13 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ResponseEntity<?> calculateProductCall(DIshRequest products) {
 
-        AtomicInteger count = new AtomicInteger();
-        AtomicInteger i = new AtomicInteger();
+        AtomicInteger count = new AtomicInteger(0);
 
         products.getProducts().forEach( x -> {
             Product product = productRepository.findByName(x).get();
 
-            count.set(product.getCall() *Integer.parseInt( products.getCount().get(i.get())) );
-            i.getAndIncrement();
+            count.set(count.get()+product.getCall());
+
         });
 
         return ResponseEntity.ok(count);
